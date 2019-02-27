@@ -2,6 +2,7 @@
 var myNum = prompt("Enter a number");
 
 function halfNumber(myNum) {
+  "use strict";
   var myNumHalf = myNum / 2;
   alert("Half of " + myNum + " is " + myNumHalf + ".");
 }
@@ -11,6 +12,7 @@ halfNumber(myNum);
 // var myNum = prompt("Enter a number");
 
 // function squareNumber(myNum) {
+//   "use strict";  
 //   var myNumSquare = Math.pow(myNum, 2);
 //   alert("The result of squaring the number " + myNum + " is " + myNumSquare + ".");
 // }
@@ -22,6 +24,7 @@ halfNumber(myNum);
 // var myNumB = prompt("Enter a number");
 
 // function percentOf(myNumA, myNumB) {
+//   "use strict";  
 //   var myPercent = (myNumA / myNumB) * 100;
 //   alert(myNumA + " is " + myPercent + "% of " + myNumB + ".");
 // }
@@ -33,29 +36,31 @@ halfNumber(myNum);
 // var myNumB = prompt("Enter another number, smaller than the first.");
 
 // function findModulus(myNumA, myNumB) {
+//   "use strict";  
 //   myRemainder = myNumA % myNumB;
 //   alert(myRemainder + " is the modulus of " + myNumA + " and " + myNumB + ".");
 // }
 // findModulus(myNumA, myNumB);
 
 
-//STEP 5
-// function myNumbers(a, b, c) {
-//   // define the array
-//   var entry = []; 
-                   
+// STEP 5
+// var myNums = [];
+// myNums[0] = parseInt(prompt("Enter your first number"));
+// myNums[1] = parseInt(prompt("Enter your second number"));
+// myNums[2] = parseInt(prompt("Enter your third number"));
 
-//   // push 3 values into array (loop 3 times)
-//   for (var i = 0; i < 3; i++) {              
-//     entry.push(prompt("Enter your number: " + (i+1))); 
+// function addThem(a) {
+//   "use strict";
+//   var sum = 0;
+//   for (var i = 0; i < myNums.length; i++) {
+//     sum += myNums[i];
 //   }
-
-//   // display numbers delimited by , 
-//   alert("Your numbers are: " + entry.join(', '));  
-
-//   alert("This is as far as I got. I couldn't find out how to make the array entries into numbers, despite spending many hours on it. Maybe I misread the assignment. Were all the numbers supposed to be put in at once, with delimiting commas? Or not? Anyway, basta.");
+//   alert("The three numbers you entered were: " + myNums.join(", ") + "\nThe sum of the three numbers in this function is: " + sum);
 // }
-// myNumbers();
+// addThem(myNums);
+
+
+
 
 
 
